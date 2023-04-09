@@ -8,32 +8,15 @@
    <body>
      <div>
        <form novalidate>
-        <p>
-          <label for="email">
-            <span>Email address</span>
-            <input type="email" id="email" name="email" />
-            <span class="error" aria-live="polite"></span>
-          </label>
-          <label for="country">
-            Country
-          </label>
-            <input type="text" id="country" name="country" required minlength="8" />
-            <span class="error" aria-live="polite"></span>
-          <label for="postalCode">
-            Postal Code
-          </label>
-            <input type="text" id="postalCode" name="postalCode" />
-            <span class="error" aria-live="polite"></span>
-          <label for="password">
-            Password
-            <input type="text" id="password" name="password" />
-          </label>
-          <label for="passwordConfirmation">
-            Password Confirmation
-            <input type="text" id="passwordConfirmation" name="passwordConfirmation" />
-          </label>
-          <button>Submit</button>
-        </p> 
+         <label for="postalCode">Postal Code:</label>
+         <input type="text" id="postalCode" />
+         <label for="country">Country: </label>
+         <select id="country">
+           <option value="can">Canada</option>
+           <option value="usa">United States of America</option>
+           <option value="mex">Mexico</option>
+         </select>
+         <input type="submit" value="Validate">
        </form>
      </div>
     <script src="formvalidation.js"></script>
